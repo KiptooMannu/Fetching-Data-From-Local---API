@@ -1,0 +1,93 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+#dashboard {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+#dashboard > div {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#dashboard > div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.header {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.theme-switcher {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.theme-switcher button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.theme-switcher button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-theme #dashboard > div {
+    background: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-theme .theme-switcher button {
+    background-color: #ff9800;
+}
+
+body.dark-theme .theme-switcher button:hover {
+    background-color: #e68900;
+}

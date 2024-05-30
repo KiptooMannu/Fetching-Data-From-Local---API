@@ -1,0 +1,7 @@
+echo "node_modules/" > .gitignore
+echo ".DS_Store" >> .gitignore
+echo "npm-debug.log*" >> .gitignore
+echo "yarn-debug.log*" >> .gitignore
+echo "yarn-error.log*" >> .gitignore
+echo ".env" >> .gitignore
+echo ".vscode/" >> .gitignore

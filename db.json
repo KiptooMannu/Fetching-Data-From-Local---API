@@ -1,0 +1,7 @@
+{
+    "facebook": { "id": "12345", "name": "John Doe", "likes": 120 },
+    "instagram": { "id": "67890", "username": "johndoe", "media_count": 250 },
+    "twitter": { "username": "johndoe", "tweets": 150, "followers": 400 },
+    "github": { "username": "your-username", "public_repos": 50, "followers": 80 }
+  }
+  
